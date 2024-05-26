@@ -24,6 +24,7 @@ pub const ScriptyParam = union(enum) {
         Site,
         Page,
         Alternative,
+        Translation,
         str,
         int,
         bool,

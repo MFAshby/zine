@@ -3,12 +3,13 @@
     .version = "0.0.0",
     .dependencies = .{
         .gfm = .{
-            .url = "git+https://github.com/kristoff-it/cmark-gfm.git#9b659dada64964c993be6d6ec16b64f1ca1e8f5a",
-            .hash = "1220a2d62d1de13c424c79d281c273156083b5232199ff68780c146b9441015ab51c",
+            // TODO revert to kristoff-it when https://github.com/kristoff-it/cmark-gfm/pull/2 is merged
+            .url = "git+https://github.com/MFAshby/cmark-gfm.git#93892f5506d45b125ed488e54d1b11a4aad8d758",
+            .hash = "12206f3bffe38c24addd050e198affd5797582efd9d8dfb34421d358a9344472681b",
         },
         .mime = .{
-            .url = "git+https://github.com/andrewrk/mime.git#d340b5f611a224884eaf316d672121cccf2b0652",
-            .hash = "12208b3c98b4dcc88608e65889abc853f625a06edbb835da90d902bed1ade4da0ac8",
+            .url = "git+https://github.com/andrewrk/mime.git#0b676643886b1e2f19cf11b4e15b028768708342",
+            .hash = "12209083b0c43d0f68a26a48a7b26ad9f93b22c9cff710c78ddfebb47b89cfb9c7a4",
         },
         .ws = .{
             .url = "git+https://github.com/karlseguin/websocket.zig.git#c77f87d0e6548865636eb9781106a8be72e5755a",
@@ -21,16 +22,20 @@
             .path = "super",
         },
         .ziggy = .{
-            .url = "git+https://github.com/kristoff-it/ziggy.git#d58d92f07e2bc06395715a5f6b55c1752891416d",
-            .hash = "1220b466e4b3a6409c11ed6a2617a7f1d5cea5ca610f8d473c287e6ea021a6181386",
+            // TODO revert to kristoff-it once https://github.com/kristoff-it/ziggy/pull/29 is merged
+            .url = "git+https://github.com/MFAshby/ziggy.git#2f34b58ca2c5e72c7dbd3ad3756df537d03d79e0",
+            .hash = "1220c198cdaf6cb73fca6603cc5039046ed10de2e9f884cae9224ff826731df1c68d",
         },
         .zeit = .{
-            .url = "git+https://github.com/rockorager/zeit#e75ccb24e88cd0196bed5a60e4bf3b5441c8c700",
-            .hash = "122071f325c37101cb8a536f3274337f016369e43b7571a07e99c260a891f2a63199",
+            // TODO revert to rockorager once https://github.com/rockorager/zeit/pull/1 is merged
+            .url = "git+https://github.com/MFAshby/zeit#e532bc7be06726e9d8f828421d4825e397bbf232",
+            .hash = "1220478f0d836049cef3e203e665103c0c280b87d3c74b50c8b79c4054a6624498f9",
         },
         .@"flow-syntax" = .{
-            .url = "git+https://github.com/neurocyte/flow-syntax#ca031a213e00eeb36b387706d1c07fc400affafc",
-            .hash = "1220512dcd20c4fc31a35ee2cbc5f5a8177effc5a5030c298795ac0c5528408c1083",
+            // TODO revert to neurocyte once https://github.com/neurocyte/flow-syntax/pull/1 is merged
+            //.url = "git+https://github.com/MFAshby/flow-syntax#0358876b11263d12c8fdd95bc45716bf5d6a4ace",
+            //.hash = "12206653b11d9986c159bc49cf1b0300af468010bf33842fdac40f8cb31de0503e6e",
+            .path = "../flow-syntax",
         },
     },
     .paths = .{"."},
